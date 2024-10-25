@@ -1,0 +1,12 @@
+package br.com.padrão;
+
+public interface interruptorListerner {
+	
+
+	public void aoligar();
+	
+	
+	public void aodesligar();
+	
+	
+}
