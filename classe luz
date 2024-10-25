@@ -1,0 +1,28 @@
+package br.com.imp;
+
+import br.com.padrão.interruptorListerner;
+
+public class Luz implements interruptorListerner {
+
+	private boolean acesa =false; 
+	
+	@Override
+	public void aoligar() {
+		// TODO Auto-generated method stub
+		acesa = true;
+		
+		System.out.println("luz ligada");
+		
+	}
+
+	@Override
+	public void aodesligar() {
+		// TODO Auto-generated method stub
+		acesa = false;
+		
+		System.out.println("luz desligada");
+	}
+	
+	
+
+}
