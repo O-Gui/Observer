@@ -1,0 +1,26 @@
+package br.com.imp;
+
+import br.com.padrão.interruptorListerner;
+
+public class Interruptor {
+	
+	private interruptorListerner listener;
+	
+	public void addListener(interruptorListerner listener) {
+		
+		this.listener = listener;	
+	}
+
+	public void ligar() {
+		
+		listener.aoligar();
+	}
+	
+	public void desligar() {
+		
+		listener.aodesligar();
+	}
+	
+	
+	
+}
